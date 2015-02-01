@@ -52,7 +52,7 @@ app.use(routeUtils.errorLogger(logger));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(session({
-    store: new jbase_session(),
+    store: new jbase_session({rootPath: path.join(__dirname, 'server/db')}),
     secret: config.secret || 'nosecret',
     key: config.key || 'sid',
     resave: false,
