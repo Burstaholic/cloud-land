@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------------------------
-// Main server module for Web Seed.
+// Main server module for Cloud Land.
 //
 // @module server.js
 //----------------------------------------------------------------------------------------------------------------------
@@ -34,6 +34,9 @@ var gPlusAuth = require('./server/auth/google-plus');
 var routeUtils = require('./server/routes/utils');
 var exampleRouter = require('./server/routes/example');
 
+// Sessions
+var jbase_session = require('jbase-session')(session);
+
 //----------------------------------------------------------------------------------------------------------------------
 
 // Build the express app
@@ -49,6 +52,7 @@ app.use(routeUtils.errorLogger(logger));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(session({
+    store: new jbase_session(),
     secret: config.secret || 'nosecret',
     key: config.key || 'sid',
     resave: false,
@@ -75,7 +79,7 @@ var server = app.listen(config.port || 3000, function()
     var host = server.address().address;
     var port = server.address().port;
 
-    logger.info('Web Seed v%s listening at http://%s:%s', package.version, host, port);
+    logger.info('Cloud Land v%s listening at http://%s:%s', package.version, host, port);
 });
 
 //----------------------------------------------------------------------------------------------------------------------

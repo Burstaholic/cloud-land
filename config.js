@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------------------------
-// Configuration for Web Seed
+// Configuration for Cloud Land
 //
 // @module example.js
 //----------------------------------------------------------------------------------------------------------------------
@@ -11,8 +11,8 @@ module.exports = {
     port: 4545,
 
     // Google Authentication
-    googleClientID: "",
-    googleSecret: ""
+    googleClientID: "883455373412-ubn2eja5coatpq2lk0cm86u6hcdf8rf1.apps.googleusercontent.com",
+    googleSecret: "itVq2dajysZ1hcw0X3a5rZM9"
 }; // end exports
 
 //----------------------------------------------------------------------------------------------------------------------

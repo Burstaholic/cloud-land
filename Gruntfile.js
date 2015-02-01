@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------------------------
-// Web Seed Gruntfile.
+// Cloud Land Gruntfile.
 //----------------------------------------------------------------------------------------------------------------------
 
 module.exports = function(grunt)
@@ -16,7 +16,7 @@ module.exports = function(grunt)
                     compress: true
                 },
                 files: {
-                    'client/css/web-seed.min.css': ['<%= project.less %>']
+                    'client/css/cloud-land.min.css': ['<%= project.less %>']
                 }
             }
         },

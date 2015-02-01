@@ -4,17 +4,17 @@
 // @module app.js
 // ---------------------------------------------------------------------------------------------------------------------
 
-angular.module('web-seed', [
+angular.module('cloud-land', [
         'ngRoute',
 
         'lodash',
         'ui.bootstrap',
         'directive.g+signin',
 
-        'web-seed.services',
-        'web-seed.controllers',
-        'web-seed.directives',
-        'web-seed.utils'
+        'cloud-land.services',
+        'cloud-land.controllers',
+        'cloud-land.directives',
+        'cloud-land.utils'
     ])
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider)
     {
@@ -27,9 +27,9 @@ angular.module('web-seed', [
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-angular.module('web-seed.services', []);
-angular.module('web-seed.controllers', []);
-angular.module('web-seed.directives', []);
-angular.module('web-seed.utils', []);
+angular.module('cloud-land.services', []);
+angular.module('cloud-land.controllers', []);
+angular.module('cloud-land.directives', []);
+angular.module('cloud-land.utils', []);
 
 // ---------------------------------------------------------------------------------------------------------------------

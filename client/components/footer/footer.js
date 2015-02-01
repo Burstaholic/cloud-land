@@ -16,7 +16,7 @@ function SiteFooterFactory()
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-angular.module('web-seed.directives').directive('siteFooter', [
+angular.module('cloud-land.directives').directive('siteFooter', [
     SiteFooterFactory
 ]);
 

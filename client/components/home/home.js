@@ -10,7 +10,7 @@ function HomeController($scope)
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-angular.module('web-seed.controllers').controller('HomeController', [
+angular.module('cloud-land.controllers').controller('HomeController', [
     '$scope',
     HomeController
 ]);

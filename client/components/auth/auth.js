@@ -84,7 +84,7 @@ function AuthServiceFactory($rootScope, $http, Promise)
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-angular.module('web-seed.services').service('AuthService', [
+angular.module('cloud-land.services').service('AuthService', [
     '$rootScope',
     '$http',
     '$q',

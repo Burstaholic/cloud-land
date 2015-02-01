@@ -39,7 +39,7 @@ function SiteHeaderFactory(authSvc)
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-angular.module('web-seed.directives').directive('siteHeader', [
+angular.module('cloud-land.directives').directive('siteHeader', [
     'AuthService',
     SiteHeaderFactory
 ]);
