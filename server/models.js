@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------------------------
-// Models for Web Seed
+// Models for Cloud Land
 //
 // @module models.js
 //----------------------------------------------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ db.User = jbase.defineModel('users', {
     email: String,
     displayName: String,
     avatar: String,
-    created: { type: String, default: Date.now() }
+    created: { type: Number, default: Date.now() }
 }, { rootPath: rootPath });
 
 //----------------------------------------------------------------------------------------------------------------------
