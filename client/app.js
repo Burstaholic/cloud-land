@@ -22,6 +22,7 @@ angular.module('cloud-land', [
 
         $routeProvider
             .when('/', { templateUrl: '/components/home/home.html', controller: 'HomeController' })
+            .when('/admin', { templateUrl: '/components/admin/admin.html', controller: 'adminController' })
             .otherwise({redirectTo: '/'});
     }]);
 

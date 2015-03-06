@@ -32,7 +32,7 @@ var gPlusAuth = require('./server/auth/google-plus');
 
 // Routers
 var routeUtils = require('./server/routes/utils');
-var exampleRouter = require('./server/routes/example');
+var adminRouter = require('./server/routes/admin');
 
 // Sessions
 var jbase_session = require('jbase-session')(session);
@@ -68,7 +68,7 @@ gPlusAuth.initialize(app);
 app.use(express.static(path.resolve('./client')));
 
 // Set up our application routes
-app.use('/example', exampleRouter);
+app.use('/admin', adminRouter);
 
 // Serve index.html
 app.get('/', routeUtils.serveIndex);
